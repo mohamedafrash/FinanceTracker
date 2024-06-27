@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Finance Tracker</h1>
+      <div class="budget">
+        <h2>Set Your Budget</h2>
+        <input
+          type="number"
+          id="budget-input"
+          placeholder="Enter your budget"
+        />
+        <button id="set-budget">Set Budget</button>
+        <p id="budget-display">Budget: $0</p>
+      </div>
+      <div class="transaction">
+        <h2>Add Transaction</h2>
+        <input type="text" id="description-input" placeholder="Description" />
+        <input type="number" id="amount-input" placeholder="Amount" />
+        <select id="type-input">
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+        <button id="add-transaction">Add Transaction</button>
+      </div>
+      <div class="transactions-list">
+        <h2>Transactions</h2>
+        <ul id="transactions"></ul>
+      </div>
+      <div class="summary">
+        <h2>Summary</h2>
+        <p id="income-display">Total Income: $0</p>
+        <p id="expense-display">Total Expense: $0</p>
+        <p id="balance-display">Balance: $0</p>
+      </div>
+      <button id="export-csv">Export to CSV</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
